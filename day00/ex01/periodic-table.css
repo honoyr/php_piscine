@@ -1,62 +1,59 @@
-small {
+/* small {
 	font-size: 60%;
-	/* text-align: right; */
-	/* margin-right: 3px;
-	margin-top: 2px;; */
-}
+} */
 
 .pure-table td, .pure-table th {
     padding: .5em 0.5em
 }
 
-.logo30 {
+/* .logo30 {
 	height: 30px;
-}
+} */
 
 p {
 	margin-right: 6px;
 	margin-left: 6px;
 }
 
-.pure-menu-link {
+/* .pure-menu-link {
 	color: #011892;
-}
+} */
 
-.display_table {
+/* .display_table {
 	border: thin solid red;
-}
+} */
 
-.grid_format {
+/* .grid_format {
 	display: table-cell;
 	border-left: 1px solid red;
 	background-color: #eee;
-}
+} */
 
-#menu a {
+/* #menu a {
 	color: #999;
 	border: none;
 	padding: 0.4em 0 0.4em 0.6em;
-}
+} */
 
-a.white {
+/* a.white {
 	color: #ffffff;
 	font-size: 1.5em;
-}
+} */
 
-.footer_h {
+/* .footer_h {
 	color: #5e5e5e;
 	background-color: #eaeaea;
-}
+} */
 
-caption.periodic_table_caption {
+/* caption.periodic_table_caption {
 	background-color: #fff;
 	font-size: 1.0em;
 	text-align: center;
 	border-style: none;
 	font-style: italic;
-}
+} */
 
-caption {
+/* caption {
 	text-align: left;
 	font-size: 0.95em;
 	color: #222;
@@ -76,22 +73,22 @@ address {
 	font-size: 0.85em;
 	font-style: italic;
 	text-align: center;
-}
+} */
 
-.custom-restricted-width {
+/* .custom-restricted-width {
 	
 
 /* To limit the menu width to the content of the menu: */
-	display: inline-block;
+	/* display: inline-block;
 /
 
 * Or set the width explicitly: */
-	/
-
+	/* / */
+/* 
 * width: 10em; */
-}
+/* } */
 
-.google_navbar_positioning {
+/* .google_navbar_positioning {
 	text-align: right;
 	display: inline-block;
 	float: right;
@@ -99,19 +96,19 @@ address {
 	margin-right: 4px;
 	margin-left: 0;
 	padding: 0;
-}
+} */
 
-.centre {
+/* .centre {
 	text-align: center;
-}
+} */
 
-.table-responsive {
+/* .table-responsive {
 	margin-left: auto;
 	margin-right: auto;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 	margin-bottom: 1em;
-}
+} */
 
 .table-responsive table {
 	width: 100%;
@@ -189,21 +186,21 @@ td.lbl {
 	padding: 0.1em 0.1em;
 }
 
-td.v {
+/* td.v {
 	background-color: transparent;
 	text-align: center;
 	padding: 0.1em 0.1em;
 	border-style: none;
 	vertical-align: middle;
-}
+} */
 
-th.v {
+/* th.v {
 	background-color: transparent;
 	text-align: center;
 	padding: 0.1em 0.1em;
 	border-style: none;
 	vertical-align: middle;
-}
+} */
 
 /* @end */
 
@@ -220,7 +217,7 @@ th.v {
 	margin-top: 2px;; */
 }
 
-.sys_rad {
+/* .sys_rad { */
 	/* font-size: 0.75em; */
 	/* font-size: 80%;
 	padding: 0;
@@ -232,11 +229,11 @@ th.v {
 	margin-top: 2px;; */
 
 	/* font-size: 0.75em; */
-	padding: 0;
+	/* padding: 0;
 	margin: 1px 0 0;
 	line-height: 1em;
-	text-align: right;
-}
+	text-align: right; */
+/* } */
 
 .e_name {
 	font-size: 0.6em;
@@ -279,6 +276,8 @@ a.sym:active {
 	padding: 0;
 	line-height: 1em;
 	margin: 2px 0 1px;
+	text-align: right;
+
 }
 
 .name {
@@ -349,13 +348,24 @@ th.lbl {
 
 /* -------------------------- * Footer Module Styles * -------------------------- */
 
-.footer {
+/* .footer {
 	font-size: 87.5%;
 	border-top: 1px solid #eee;
 	margin-top: 3.4286em;
 	padding: 1.1429em;
 	background: rgb(250, 250, 250);
-}
+	right:1%;
+} */
+
+/* footer ft{
+	color:white;
+	position: absolute;
+	right:1%;
+	/* text-align: left; */
+	/* bottom: 0; */
+	/* font-style: italic;
+	font-family: monospace;
+} */ */
 
 /* @end */
 
@@ -363,20 +373,20 @@ th.lbl {
 
 /* -------------------------- * Top Menu Styles * -------------------------- */
 
-.pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {
+/* .pure-menu-selected .pure-menu-link, .pure-menu-selected .pure-menu-link:visited {
 	color: black;
 	font-weight: bold;
-}
-
+} */
+/* 
 .home-menu {
-	
+	 */
 
 /*padding: 0.5em; */
-	text-align: left;
+	/* text-align: left;
 	box-shadow: none;
-}
+} */
 
-.home-menu {
+/* .home-menu {
 	background: #111111;
 }
 
@@ -384,14 +394,14 @@ th.lbl {
 	
 
 /* Fixed menus normally have a border at the bottom. */
-	border-bottom: none;
+	/* border-bottom: none; */
 	
 
 /* I need a higher z-index here because of the scroll-over effect. */
-	z-index: 4;
-}
+	/* z-index: 4;
+} */
 
-.home-menu .pure-menu-heading {
+/* .home-menu .pure-menu-heading {
 	color: #eeeeee;
 	text-transform: none;
 	font-weight: 400;
@@ -404,34 +414,51 @@ th.lbl {
 
 .home-menu a {
 	color: #111111;
-}
+} */
 
-.home-menu li a:hover, .home-menu li a:focus {
+/* .home-menu li a:hover, .home-menu li a:focus {
 	background: none;
 	border: none;
 	color: #0096ff;
-}
+} */
 
-.pure-menu-list {
+/* .pure-menu-list {
 	vertical-align: bottom;
-}
+} */
 
 /* @end */
 
 /* @group Headings */
 
-h1 {
+/* h1 {
 	vertical-align: bottom;
 	line-height: 1.4em;
 	font-size: 1.5em;
 	margin-top: 0.5em;
 	margin-bottom: 0em;
 	text-align: center;
+} */
+
+h1{
+	color:rgb(0, 0, 0);
+	text-align: center;
+	font-style: italic;
+	font-family: monospace;
 }
 
-h1.z, h2.z, h3.z {
+footer ft{
+	color:rgb(0, 0, 0);
+	position: absolute;
+	right:1%;
+	/* text-align: left; */
+	/* bottom: 0; */
+	/* font-style: italic;
+	font-family: monospace; */
+}
+
+/* h1.z, h2.z, h3.z {
 	color: #666;
 	background-color: #fff;
-}
+} */
 
 /* @end */
