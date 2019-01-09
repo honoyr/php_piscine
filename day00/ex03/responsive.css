@@ -1,0 +1,317 @@
+
+.pure-table td, .pure-table th {
+    padding: .5vw 0.5vw
+}
+
+.table-responsive table {
+	width: 100%;
+	min-width: 35.5vw;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.pure-menu-disabled, .pure-menu-heading, .pure-menu-link {
+	padding: .5vw 0 .5vw 0.2vw;
+}
+
+/* @group Pure Overrides */
+
+a {
+	text-decoration: none;
+}
+
+/* @end */
+
+/* @group Colours */
+
+td.s, .s {
+	color: #222222;
+	background-color: #6699ff;
+	border: 1px solid #336699;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.sm, .sm {
+	color: #222222;
+	background-color: #52bedf;
+	border: 1px solid #5abdca;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.p, .p {
+	color: #222222;
+	background-color: #ffcc00;
+	border: 1px solid #cc9900;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.d, .d {
+	color: #222222;
+	background-color: #ff4433;
+	border: 1px solid #cc6666;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.o, .o {
+	color: #222222;
+	background-color: #f09328;
+	border: 1px solid #d36a14;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.f, .f {
+	color: #222222;
+	background-color: #57d476;
+	border: 1px solid #27c027;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.bm, .bm {
+	color: #222222;
+	background-color: #098829;
+	border: 1px solid #065c06;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.m, .m {
+	color: #222222;
+	background-color: #17b825;
+	border: 1px solid #058605;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.h, .h {
+	color: #222222;
+	background-color: #d38deb;
+	border: 1px solid #9d52b6;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.g, .g {
+	color: #222222;
+	background-color: #cc33ff;
+	border: 1px solid #9900cc;
+	text-align: center;
+	padding: 0.1vw 0;
+}
+
+td.z {
+	color: #222222;
+	background-color: #cccccc;
+	border: 1px solid #666666;
+	text-align: center;
+	padding: 0.1vw 0.1vw;
+}
+
+td.lbl {
+	color: #222222;
+	background-color: #cccccc;
+	text-align: center;
+	padding: 0.1vw 0.1vw;
+}
+
+th.v {
+	background-color: transparent;
+	text-align: center;
+	padding: 0.1vw 0.1vw;
+	border-style: none;
+	vertical-align: middle;
+}
+
+/* @end */
+
+/* @group Periodic Table */
+
+.at_num {
+	font-size: 0.75vw;
+	padding: 0;
+	margin: 1px 0 0;
+	line-height: 1vw;
+	text-align: left;
+}
+
+.e_name {
+	font-size: 0.75vw;
+	padding: 0;
+	margin: 4px 0 0;
+	line-height: 1vw;
+}
+
+.sym {
+	font-size: 2vw;
+	padding: 0;
+	line-height: 1.1vw;
+	margin: 0;
+	font-weight: bold;
+	border-style: none;
+}
+
+a.sym:link {
+	color: #011892;
+}
+
+a.sym:visited {
+	color: #7e0b80;
+	text-decoration: none;
+}
+
+a.sym:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a.sym:active {
+	color: #dd99ff;
+	background-color: transparent;
+}
+
+.at_wt {
+	font-size: 0.6vw;
+	padding: 0;
+	line-height: 1vw;
+	margin: 2px 0 1px;
+	text-align: right;
+
+}
+
+.name {
+	font-size: 0.5vw;
+	padding: 0;
+	line-height: 1vw;
+	margin: 2px 0 1px;
+}
+
+.pure-table, table.periodic-table {
+	border: 0px solid #fff;
+	margin: 0.2vw;
+}
+
+td.asterisk {
+	color: #cc3300;
+	font-size: 0.8vw;
+	vertical-align: middle;
+	border-style: none;
+}
+
+th.w5 {
+	color: #cc3300;
+	background-color: #fff;
+	width: 5%;
+	border: 1px solid #ccc;
+	font-size: 0.9vw;
+	text-align: center;
+}
+
+th.w2 {
+	color: #cc3300;
+	background-color: #fff;
+	width: 1%;
+	font-size: 0.7vw;
+	text-align: center;
+}
+
+th.w8 {
+	color: #cc3300;
+	background-color: #fff;
+	width: 6%;
+	
+
+/* border: 1px solid #aaaaaa; */
+	font-size: 0.9vw;
+	text-align: center;
+}
+
+th.lbl {
+	color: #cc3300;
+	background-color: #fff;
+	
+
+/* border: 1px solid #aaaaaa; */
+	font-size: 0.9vw;
+	vertical-align: middle;
+}
+
+.padded_column {
+	margin: 0px;
+	padding: 6px;
+}
+
+
+h1{
+	font-size: 2vw;
+	color:rgb(0, 0, 0);
+	text-align: center;
+	font-weight: bold;
+}
+
+footer ft{
+	color:rgb(0, 0, 0);
+	position: absolute;
+	right:1%;
+
+}
+
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, rgb(247, 186, 167), rgb(231, 138, 174), rgb(168, 222, 241), rgb(169, 236, 221));
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+img{
+	position: left;
+	padding: 0.6vw;
+	max-width: 5vw;
+}
+
+/* @end */
