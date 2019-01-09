@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="utf-8">
-        <title>Speak</title>
-        <link rel="stylesheet" type="text/css" href="doft.css">
-    </head>
-    <body>
-            <div id="HeaderBox">
-                <img class="day" src = "resources/day_of_the_42.png">
-                <a href="">
-                    <img class="close" src = "resources/close.gif">
-                </a>
-                
-            </div>
-        </br>
-        <div id = "Claster">
-                <img class="claster_img" src = "resources/cluster.jpg">
+<html>
+<head>
+    <title>Day of the 42</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="doft.css">
+</head>
+<body>
+  <div class="gray header-block">
+    <div alt="logo day of the 42" class="day"></div>
+        <div class="header-right">
+            <a href="http://www.disney.com/" target="_blank"><img src="resources/reload.png" title="Reload" alt="Start from the beginning" class="reload"/></a>
+            <a href="https://www.relaischateaux.com/" target="_blank"><img src="resources/close.gif" title="Disconnect" alt="Disconnect" class="disconnect"/></a>
         </div>
-    </body>
-    </html>
+    <img src="resources/loupe.png" alt="loupe" class="loupe"/>
+  </div>
+  <div class="mid">
+    <!-- LEFT BOX -->
+    <div class="gray left_box">
+      <img src="resources/arrow.png" title="Advance" class="arrow alt="Advance""/>
+      <img src="resources/main.png" title="Take" class="hand" alt="Take" class="hand"/>
+      <img src="resources/oeil.png" title="Look" class="eye" alt="Look" class="eye"/>
+      <img src="resources/outil.png" title="Use" class="tools" alt="Use" class="tools"/>
+      <img src="resources/chat-icon.png" title="Speak" class="chat" alt="Speak"/>
+    </div>
+    <!-- MIDDLE BOX-->
+    <div class="gray Claster_box">
+      <img src="resources/cluster.jpg" title="Claster" class="cluster" alt="cluster"/>
+      <a href="http://www.ikea.com/" title="Chair" target="_blank" class="ikea"></a>
+      <a href="https://www.apple.com/" title="iMac" target="_blank" class="apple"></a>
+    </div>
+    <!-- RIGHT BOX -->
+    <div class="gray right_box">
+        <img src="resources/book.png" title="Book" alt="book" class="book"/>
+        <img src="resources/towel.png" title="Towel" alt="towel" class="towel"/>
+        <div class="bricks">
+            <div alt="brick" class="brick" title="Brick"></div>
+            <div alt="brick" class="brick" title="Brick"></div>
+        </div>
+    </div>
+    <!-- FORM BOX -->
+    <div class="form_green">
+      <p>Vous
+          <span style="font-size: 2vw;">entrez</span> 
+          alors dans une grande piece remplie d'
+          <span class="red">ordinateurs</span>...</p>
+      <p style="font-style: italic;" >- Bonjour, vous êtes nouveau ici ?</p>
+      <form>
+        <input type="text" class="form">
+        <input type="submit" value="Repondre" class="repond">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

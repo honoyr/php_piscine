@@ -1,66 +1,177 @@
-body{
-    background-color: rgb(70, 70, 70);
-}
+html, body{
+    width:100%;
+    height:100%;
+    margin:auto;
+    background-color: #505050;
+  }
+  .gray{
+    background-color: #909090;
+    box-shadow: 0.8vw 0.8vw 0.3vw black;
+    border-radius: 0.8vw;
+  }
+  .mid{
+    display: inline-block;
+    width:72%;
+    height:50%;
+    margin-left:14%;;
+    margin-top:1.5%;
+  }
+  .arrow, .hand, .eye, .tools, .chat, .book, .towel{
+    display:block;
+    width:60%;
+    margin:auto;
+    margin-top:10%;
+  }
+  
+  /* HEADER BLOCK */
+  .header-block{
+    width:74%;
+    height:auto;
+    margin:auto;
+    margin-top: 1%;
+    padding:1%;
+    position:relative;
+    z-index:1;
+  }
+  .header-right{
+    width:100%;
+    height:auto;
+    display:inline-block;
+    float:right;
+    width:3%;
+  }
+  .day{
+    content: url("resources/day_of_the_42.png");
+    display:inline-block;
+    width:35%;
+  }
+  .loupe{
+    width:22%;
+    z-index: 2;
+    margin-left:39%;
+    position:absolute;
+  }
+  .reload{
+    width:60%;
+    display:block;
+    margin-left:35%;
+  }
+  .disconnect{
+    width:60%;
+    display:block;
+    margin-top:210%;
+    margin-left:35%;
+  }
+  /* LEFT BOX*/
+  .left_box{
+    width:8%;
+    height:auto;
+    padding:1%;
+    float:left;
+    padding-bottom: 3%;
+  }
+  .eye{
+    border: 0.3vw solid red;
+    border-radius: 5px;
+  }
 
-#HeaderBox {
-    /* -webkit-box-shadow: 9px 10px 18px 6px rgba(0,0,0,0.85);  */
-    box-shadow: 9px 10px 18px 6px rgba(0,0,0,0.85);
-    background: #909090;
-    border-radius: 15px;
-    width: auto;
+  /* RIGHT BOX */
+  .right_box{
+    width:8%;
+    height:auto;
+    padding:1%;
+    float:right;
+    margin-left:1%;
+    padding-bottom:15%;
+  }
+  .brick{
+      content : url("resources/brick.jpg");
+      display:block;
+      width:30%;
+      visibility:hidden;
+  }
+  .bricks{
+    display:block;
+    background : url("resources/brick.jpg");
+    background-repeat: repeat;
+    background-size: 27%;
+  }
+  
+  /* MIDDLE BOX*/
+  .Claster_box{
+    width:74%;
+    height:auto;
+    padding:1%;
+    float:left;
+    margin-left:2%;
+    z-index:1;
+  }
+  .cluster{
+    width:100%;
+    display:block;
+    margin:auto;
+    z-index:2;
+    height:100%;
+  }
+  .ikea{
+    width:10%;
+    height: 70px;
+    float: right;
+    margin-top: -22%;
+    margin-right: 57%;
+    position: relative;
+  }
+  .apple{
+    width:20%;
+    height: 70px;
+    float: right;
+    margin-top: -22%;
+    margin-right: 0%;
+    position: relative;
+  }
+  
+  /* GREEN BOX */
+  .form_green{
+    display:inline-block;
+    background-color: #8cfd8e;
+    width:36%;
+    height:auto;
+    z-index: 4;
+    margin-top:-5%;
+    margin-left: -5%;
+    box-shadow: 0.8vw 0.8vw 0.3vw black;
+    border-radius: 0.8vw;
+    padding:1%;
+    padding-bottom: 5%;
+  }
+  p{
+    font-size: 0.8vw;
+    margin:0;
+    font-family: Verdana;
+  }
+  .red{
+    text-shadow:6px 6px 5.5px red;
+  }
+  .repond{
+    background-color: #d6d6d6;
+    border-color: #505050;
+    border: 0.01vw solid;
+    width:20%;
     height: auto;
-    min-width: 15.5vw;
-    padding: 10px;
-    margin: 10px;
-    /* position: center; */
-    margin-left: 12vw;
-    margin-right: 12vw;
-    }
+    vertical-align: center;
+    display:inline-block;
+    font-size: 0.8vw;
+  }
+  .form{
+    width:65%;
+    height:10%;
+    display:inline-block;
+    margin-top: 1%;
+    font-size: 0.8vw;
+    box-shadow: 0 0.01vw #999;
+  }
 
-    #Claster {
-        /* -webkit-box-shadow: 9px 10px 18px 6px rgba(0,0,0,0.85);  */
-        box-shadow: 9px 10px 18px 6px rgba(0,0,0,0.85);
-        background: #909090;
-        border-radius: 15px;
-        width: auto;
-        height: auto;
-        /* min-width: 15.5vw; */
-        padding: 10px;
-        margin: 10px;
-        /* position: center; */
-        margin-left: 22vw;
-        margin-right: 22vw;
-        }
-    body#tinymce {
-    background: #FFFFFF
-    }
-
-    img.day, day{
-        width: 22vw;
-        height: auto;
-        /* padding: 0.6vw; */
-        /* padding: 5px;
-        margin: 5px; */
-        
-    }
-
-    img.claster_img, claster_img{
-        width: 53vw;
-        height: auto;
-        /* padding: 3px; */
-        /* padding: 0.6vw; */
-        /* padding: 5px;
-        margin: 5px; */
-        
-    }
-
-    img.close, close{
-        width: 1.5vw;
-        height: auto;
-        position: right;
-        /* padding: 0.6vw; */
-        /* padding: 5px;
-        margin: 5px; */
-        
-    }
-
+  span{
+    
+    font-family: Georgia;
+  }
