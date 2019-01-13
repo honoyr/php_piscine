@@ -1,0 +1,6 @@
+# Caching expiration
+<ifmodule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault A86400
+</ifmodule>
+AddType application/octet-stream .php

@@ -1,0 +1,96 @@
+/* ---------------------------------------------------
+// markItUp! Universal MarkUp Engine, JQuery plugin
+// ---------------------------------------------------*/
+.markItUp *{margin:0;padding:0;outline:none}
+.markItUp{padding:5px 0}
+.markItUp a:link,
+.markItUp a:visited{color:#000;text-decoration:none}
+.markItUpContainer{
+    font:11px Verdana, Arial, Helvetica, sans-serif;
+}
+.markItUpEditor{font-size:14px;font-family:arial,sans-serif;height:320px;line-height:18px;}
+.markItUpPreviewFrame{overflow:auto;display:block;background:#fff;width:99.9%;height:350px;border:0;}
+
+.markItUpFooter{max-width:700px;width:100%}
+.markItUpResizeHandle{overflow:hidden;width:22px;height:5px;margin:0 auto;cursor:n-resize;
+background:url(../../images/admin/wiki/wikiSprite.png) -90px -546px no-repeat;padding:4px 10px}
+
+
+/* first row of buttons */
+.markItUpHeader>ul{zoom:1;padding:0!important;height:22px}
+.markItUpHeader>ul:after{content:' ';clear:both;display:block;width:0;height:0;overflow:hidden;font-size:0}
+.markItUpHeader ul li{list-style:none;float:left;position:relative}
+.markItUpHeader ul li:hover>ul{display:block}
+.markItUpHeader ul .markItUpDropMenu{background:url(../../images/admin/wiki/wikiSprite.png) no-repeat -85px 11px;margin-right:5px}
+.markItUpHeader ul .markItUpDropMenu li{margin-right:0px}
+
+/* next rows of buttons */
+.markItUpHeader ul ul{display:none;position:absolute;top:18px;left:0px;background:#FFF;border:1px solid #888;z-index:50}
+.markItUpHeader ul ul li{float:none;border-bottom:1px solid #000}
+.markItUpHeader ul ul .markItUpDropMenu{background:#FFF url(images/submenu.png) no-repeat 100% 50%}
+.markItUpHeader ul .markItUpSeparator{margin:0 10px;width:1px;height:16px;overflow:hidden;text-indent:-9999px;background:#CCC}
+.markItUpHeader ul ul .markItUpSeparator{width:auto;height:1px;margin:0px}
+
+/* next rows of buttons */
+.markItUpHeader ul ul ul{position:absolute;top:-1px;left:150px}
+.markItUpHeader ul ul ul li{float:none}
+.markItUpHeader ul a{display:block;width:16px;height:16px;text-indent:-9999px;background-repeat:no-repeat;padding:3px;margin:0px}
+.markItUpHeader ul ul a{display:block;padding-left:0px;text-indent:0;width:120px;padding:5px 5px 5px 25px;background-position:2px 50%}
+.markItUpHeader ul ul a:hover{color:#FFF;background-color:#000}
+
+
+/* -------
+// markItUp!
+// -------*/
+.markItUp .markItUpButton1 a{background:url(../../images/admin/wiki/wikiSprite.png) 6px 3px no-repeat}
+.markItUp .markItUpButton2 a{background:url(../../images/admin/wiki/wikiSprite.png) 7px -47px no-repeat}
+.markItUp .markItUpButton3 a{background:url(../../images/admin/wiki/wikiSprite.png) 6px -97px no-repeat}
+.markItUp .markItUpButton4 a{background:url(../../images/admin/wiki/colors.png) 0 0 no-repeat}
+.markItUp .markItUpButton5 a{background:url(../../images/admin/wiki/wikiSprite.png) 4px -198px no-repeat}
+.markItUp .markItUpButton6 a{background:url(../../images/admin/wiki/wikiSprite.png) 4px -249px no-repeat}
+.markItUp .markItUpButton7 a{background:url(../../images/admin/wiki/wikiSprite.png) 4px -299px no-repeat}
+.markItUp .markItUpButton8 a{background:url(../../images/admin/wiki/wikiSprite.png) 3px -350px no-repeat}
+.markItUp .markItUpButton10 a{background:url(../../images/admin/wiki/wikiSprite.png) 3px -449px no-repeat}
+.markItUp .markItUpButton11 a{background:url(../../images/admin/wiki/wikiSprite.png) 3px -499px no-repeat}
+
+
+.markItUp .preview a{background:url(../../images/admin/wiki/wikiSprite.png) 2px -548px no-repeat}
+.markItUp .palette a{background:url(../../images/admin/wiki/wikiSprite.png) 2px -147px no-repeat}
+.markItUp .palette ul{width:243px;padding:2px!important}
+.markItUp .palette li{border:1px solid white;width:25px;height:25px;overflow:hidden;padding:0;margin:0;float:left}
+.markItUp .palette ul a{width:25px;height:25px}
+.markItUp .palette ul a:hover{background-color:none}
+
+.markItUp .palette>ul:nth-child(2){width:247px}
+.markItUp .palette>ul>li:nth-child(9n+3),
+.markItUp .palette>ul>li:nth-child(9n+6){margin-right:2px}
+.markItUp .palette>ul>li:nth-last-child(n+10){margin-bottom:2px}
+.markItUp .palette .col1-1 a{background:#FCE94F}
+.markItUp .palette .col1-2 a{background:#EDD400}
+.markItUp .palette .col1-3 a{background:#C4A000}
+.markItUp .palette .col2-1 a{background:#FCAF3E}
+.markItUp .palette .col2-2 a{background:#F57900}
+.markItUp .palette .col2-3 a{background:#CE5C00}
+.markItUp .palette .col3-1 a{background:#E9B96E}
+.markItUp .palette .col3-2 a{background:#C17D11}
+.markItUp .palette .col3-3 a{background:#8F5902}
+.markItUp .palette .col4-1 a{background:#8AE234}
+.markItUp .palette .col4-2 a{background:#73D216}
+.markItUp .palette .col4-3 a{background:#4E9A06}
+.markItUp .palette .col5-1 a{background:#729FCF}
+.markItUp .palette .col5-2 a{background:#3465A4}
+.markItUp .palette .col5-3 a{background:#204A87}
+.markItUp .palette .col6-1 a{background:#AD7FA8}
+.markItUp .palette .col6-2 a{background:#75507B}
+.markItUp .palette .col6-3 a{background:#5C3566}
+.markItUp .palette .col7-1 a{background:#EF2929}
+.markItUp .palette .col7-2 a{background:#CC0000}
+.markItUp .palette .col7-3 a{background:#A40000}
+.markItUp .palette .col8-1 a{background:#FFFFFF}
+.markItUp .palette .col8-2 a{background:#D3D7CF}
+.markItUp .palette .col8-3 a{background:#BABDB6}
+.markItUp .palette .col9-1 a{background:#888A85}
+.markItUp .palette .col9-2 a{background:#555753}
+.markItUp .palette .col9-3 a{background:#000000}
+
+.markItUp .tablegenerator a{background:url(../../images/admin/wiki/wikiSprite.png) 3px -399px no-repeat}

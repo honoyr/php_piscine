@@ -1,0 +1,7 @@
+/*Creating shadow of popup for IE*/
+.popEvent>.in{position:relative;z-index:1001;}
+.popEvent>.shadow{position:absolute;z-index:999;display:block;
+background:#888;top:-8px;left:-8px;right:8px;bottom:8px;
+filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=8);
+-ms-filter:"progid:DXImageTransform.Microsoft.Blur(pixelradius=8)";}
+

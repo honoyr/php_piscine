@@ -1,0 +1,45 @@
+.wikitext {font-size:14px;color:#000000;font-family:tahoma,arial,sans-serif;line-height:1.4}
+
+.wikitext h1,.wikitext h2,.wikitext h3{
+font-weight:normal;color:#2E2E2E;padding:10px 0 15px;}
+.wikitext h4,.wikitext h5,.wikitext h6{padding:10px 0 15px;color:#2E2E2E;}
+.wikitext h1 {font-size:24px;font-weight:normal}
+.wikitext h2 {font-size:24px;font-weight:normal}
+.wikitext h3 {font-size:20px;font-weight:normal}
+.wikitext h4 {font-size:18px;}
+.wikitext h5 {font-size:16px;}
+.wikitext h6 {font-size:14px;}
+
+.wikitext p{padding:0 0 1em 0;}
+
+.wikitext code{background-color:#eee;border:1px dashed #aaa;color:#000000;display:block;
+margin:0 0 15px 0;padding:10px 5px 10px 5px;font-family:"Courier New",serif;font-size:14px;}
+
+.wikitext blockquote{background-color:#eee;border:1px dashed #aaa;color:#000000;display:block;
+margin:0 0 15px 0;padding:10px 5px 10px 5px;font-family:"Courier New",serif;font-size:14px;
+font-style:italic;}
+
+.wikitext img{}
+
+.wikitext hr{display:block;height:1px;overflow:hidden;color:#8CACBB;background:#8CACBB;
+margin:20px 0 20px 0;border:0;}
+
+.wikitext ul{padding:0 0px 0 35px;list-style-position:inside;}
+.wikitext ul li{list-style-type:square;font-size:14px;color:#000;padding:3px 0 3px 0;}
+
+.wikitext ol{padding:0 0 0 35px;list-style-position:inside;list-style-type:decimal;}
+.wikitext ol li{font-size:14px;color:#000;padding:3px 0 3px 0;}
+.wikitext ol ol{list-style-type:lower-alpha;}
+
+.wikitext ul ul,
+.wikitext ol ol,
+.wikitext ul ol,
+.wikitext ol ul{padding:0 0 0 25px;}
+
+.wikitext div#toc{background-color:#F7F9FA;border:1px solid #8CACBB;padding:10px 10px 10px 30px;}
+.wikitext div#toc strong{text-align:center;margin:0 0 5px 0;display:block;}
+
+.wikitext table.wikitable{background-color:#FFF;border-collapse:collapse;margin:0 0 15px 0px;
+line-height:1.4}
+.wikitext table.wikitable tr{}
+.wikitext table.wikitable td{border:1px solid #aaaaaa;padding:3px 4px;}

@@ -1,0 +1,10 @@
+ErrorDocument 403 /access/forbidden
+ErrorDocument 404 /page/not/found
+<IfModule mod_rewrite.c>
+    
+    Options -Indexes
+    RewriteEngine	on 
+    RewriteCond     %{SCRIPT_FILENAME}  !-f
+    RewriteCond $1 !^(index\.php|robots\.txt|images|style|scripts)
+    RewriteRule		^(.+) index.php [L]
+</IfModule>

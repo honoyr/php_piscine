@@ -1,0 +1,27 @@
+# Gzip/deflate
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+AddEncoding gzip .gz
+
+# Rewrite
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    Options -Indexes
+    RewriteEngine	on
+    
+    # JS gzip
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{HTTP_USER_AGENT} !Konqueror
+    RewriteCond %{REQUEST_FILENAME}.gz -f
+    RewriteRule ^(.*)\.js$ $1.js.gz [QSA,L]
+    <FilesMatch \.js\.gz$>
+        ForceType application/x-javascript
+    </FilesMatch>
+</IfModule>
+
+# Caching expiration
+<ifmodule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault A2592000
+</ifmodule>
