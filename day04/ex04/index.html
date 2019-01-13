@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>42 chat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            background: #38a2b3;
+        }
+        .page {
+            padding: 8% 0 0;
+            font-family: "Roboto", sans-serif;
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 600px;
+            margin: 10% auto ;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        .submit {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #c9d748;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+        .form {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 360px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+
+        }
+        .form input {
+            font-family: "Roboto", sans-serif;
+            outline: 0;
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .form .submit {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #e1ef4e;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+        .form .submit:hover,.form .submit:active,.form .submit:focus {
+            background: #c9d748;
+        }
+
+    </style>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body>
+<div class="page">
+<h1>
+    42 chat
+</h1>
+<form class="form" action="login.php" method="POST">
+
+    login:<br>
+    <input type="text" placeholder="login" name="login" value="" />
+    <br>
+    passwd:<br>
+    <input type="password" placeholder="password" name="passwd" value=""/>
+    <br><br>
+    <input class="submit" type="submit" placeholder="LOGIN" name="submit" value="OK" />
+    <p>
+        Not registrated?
+        <br>
+        <a href="create.html">Create Account</a>
+    </p>
+    <p>
+        Would you like to change password?
+        <br>
+        <a href="modif.html">Change password</a>
+    </p>
+</form>
+
+</div>
+</body>
+</html>

@@ -5,7 +5,6 @@ if ($_POST['submit'] === "OK"){
         if (!(file_exists("../private")))
         {
             echo "ERROR" . PHP_EOL;
-            exit;
         }
         $exist_user = $_POST['login'];
         $old_pw = hash("whirlpool", $_POST['oldpw']);
@@ -17,12 +16,10 @@ if ($_POST['submit'] === "OK"){
                     $arr_data[$key]['passwd'] = $new_pw;
                     file_put_contents("../private/passwd", serialize($arr_data));
                     echo "OK" . PHP_EOL;
-                    exit ;
                 }
                 else
                 {
                     echo "ERROR" . PHP_EOL;
-                    exit;
                 }
             }
         }
@@ -30,12 +27,18 @@ if ($_POST['submit'] === "OK"){
     else
     {
         echo "ERROR" . PHP_EOL;
-        exit;
     }
 }
 else
 {
     echo "ERROR" . PHP_EOL;
-    exit;
 }
 ?>
+<html>
+    <body>
+    <p>
+        <br>
+        <a href="index.html"><-Back</a>
+    </p>
+    </body>
+</html>
