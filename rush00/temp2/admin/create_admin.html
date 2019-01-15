@@ -1,0 +1,101 @@
+<html>
+<title>42 chat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+    body {
+        background: #38a2b3;
+    }
+    .page {
+        padding: 8% 0 0;
+        font-family: "Roboto", sans-serif;
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 600px;
+        margin: 10% auto ;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    .submit {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #e1ef4e;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+    }
+    .form {
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+
+    }
+    .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    .form .submit {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #e1ef4e;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+    }
+    .form .submit:hover,.form .submit:active,.form .submit:focus {
+        background: #e1ef4e;
+    }
+
+</style>
+<body>
+<div class="page">
+    <p>
+        <a href="../index.php">Go home</a>
+    </p>
+    <h1>
+        Create admin
+    </h1>
+<p>
+    <div class="submit">
+    <a href="login_admin.html">Back</a>
+    </div>
+</p>
+<form class="form" action="create_admin.php" method="POST">
+    login:<br>
+    <input type="text" placeholder="login" name="login" value="" />
+    <br>
+    passwd:<br>
+    <input type="password"  placeholder="password" name="passwd" value=""/>
+    <br><br>
+    Master key:<br>
+    <input type="Master key"  placeholder="Master key" name="masterkey" value=""/>
+    <br><br>
+    <input class="submit" type="submit" placeholder="password" name="submit" value="OK" />
+</form>
+</div>
+</body>
+</html>

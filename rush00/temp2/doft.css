@@ -1,0 +1,259 @@
+html, body{
+    width:100%;
+    height:100%;
+    margin:auto;
+    background: #38a2b3;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .gray{
+    background-color: #ffffff;
+    /*box-shadow: 0.8vw 0.8vw 0.3vw black;*/
+    /*border-radius: 0.8vw;*/
+    /*padding: 8% 0 0;*/
+
+    /*position: relative;*/
+    /*z-index: 1;*/
+    background: #FFFFFF;
+    /*max-width: 600px;*/
+    /*margin: 10% auto ;*/
+    /*padding: 45px;*/
+    /*text-align: center;*/
+    /*box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);*/
+  }
+  .mid{
+    display: inline-block;
+    width:97%;
+    height:auto;
+    margin-left:1.5%;;
+    margin-top:0.5%;
+  }
+  .arrow, .hand, .eye, .tools, .chat, .book, .towel{
+    display:block;
+    width:60%;
+    margin:auto;
+    margin-top:10%;
+  }
+  
+  /* HEADER BLOCK */
+  .header-block{
+    width:95%;
+    height:auto;
+    margin:auto;
+    margin-top: 1%;
+    padding:1%;
+    position:relative;
+    z-index:1;
+  }
+  .header-right{
+    width:100%;
+    height:auto;
+    display:inline-block;
+    float:right;
+    width:8%;
+
+
+  }
+
+.menu{
+  width:100%;
+  height:auto;
+  /*display:inline-block;*/
+  /*float:right;*/
+  /*position: absolute;*/
+  /*width:3%;*/
+  /*margin-top:2%;*/
+  /*padding-bottom: 0,2%;*/
+  /*z-index: 1;*/
+  float: left;
+  margin-left:70%;
+  /*position:absolute;*/
+
+  /*margin:auto;*/
+  margin-top: 1%;
+  /*padding:0.5%;*/
+  position:relative;
+  /*z-index:1;*/
+}
+
+  .day{
+    content: url("img/web/logo42-min.png");
+    display:inline-block;
+    width:15%;
+  }
+  .loupe{
+    width:22%;
+    z-index: 2;
+    margin-left:39%;
+    position:absolute;
+
+
+  }
+  .reload{
+    width:100%;
+    display:block;
+    margin-left:35%;
+    padding: 5%;
+    text-decoration: none;
+    /*font-size: 2vw;*/
+
+  }
+  .disconnect{
+    width:60%;
+    display:block;
+    margin-top:10%;
+    margin-left:35%;
+    padding: 5%;
+    text-decoration: none;
+    /*font-size: 2vw;*/
+  }
+
+
+  /* LEFT BOX*/
+  .left_box{
+    width:10%;
+    height:auto;
+    /*padding:1%;*/
+    float:left;
+    padding-bottom: 3%;
+  }
+  .eye{
+    border: 0.3vw solid red;
+    border-radius: 5px;
+  }
+
+  /* RIGHT BOX */
+  .right_box{
+    width:10%;
+    height:auto;
+    /*padding:1%;*/
+    float:right;
+    /*margin-left:1%;*/
+    padding-bottom:15%;
+  }
+  .brick{
+      content : url("resources/brick.jpg");
+      display:block;
+      width:30%;
+      visibility:hidden;
+  }
+  .bricks{
+    display:block;
+    background : url("resources/brick.jpg");
+    background-repeat: repeat;
+    background-size: 27%;
+  }
+  
+  /* MIDDLE BOX*/
+  .Claster_box{
+    width:74%;
+    height:auto;
+    padding:1%;
+    float:left;
+    margin-left:2%;
+    z-index:1;
+  }
+  .cluster{
+    width:100%;
+    display:block;
+    margin:auto;
+    z-index:2;
+    height:100%;
+  }
+  .ikea{
+    width:10%;
+    height: 70px;
+    float: right;
+    margin-top: -22%;
+    margin-right: 57%;
+    position: relative;
+  }
+  .apple{
+    width:20%;
+    height: 70px;
+    float: right;
+    margin-top: -22%;
+    margin-right: 0%;
+    position: relative;
+  }
+  
+  /* GREEN BOX */
+  .form_green{
+    display:inline-block;
+    background-color: #8cfd8e;
+    width:36%;
+    height:auto;
+    z-index: 4;
+    margin-top:-5%;
+    margin-left: -5%;
+    box-shadow: 0.8vw 0.8vw 0.3vw black;
+    border-radius: 0.8vw;
+    padding:1%;
+    padding-bottom: 5%;
+  }
+  p{
+    font-size: 1vw;
+    margin:0;
+    font-family: "Roboto";
+  }
+  .red{
+    text-shadow:6px 6px 5.5px red;
+  }
+  .repond{
+    background-color: #d6d6d6;
+    border-color: #505050;
+    border: 0.01vw solid;
+    width:20%;
+    height: auto;
+    vertical-align: center;
+    display:inline-block;
+    font-size: 0.8vw;
+  }
+  .form{
+    width:65%;
+    height:10%;
+    display:inline-block;
+    margin-top: 1%;
+    font-size: 0.8vw;
+    box-shadow: 0 0.01vw #999;
+  }
+
+  span{
+    
+    font-family: Georgia;
+  }
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.8vw;
+  font-size: 1.1vw;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 2vw;
+  box-shadow: 0vw 0.8vw 0.8vw 0vw rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1vw 1vw;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

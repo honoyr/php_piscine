@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="top-nav">
+                <a href="index.html" class="top-nav-element" id="homebutton">
+                        <div>Home</div>
+                </a>
+                <div class="top-nav-element" id="cart">Cart</div>
+                <div class="top-nav-space"></div>
+                <a href="create.html" class="top-nav-element" id="create-button">
+                    <div>Create New Account</div>
+                </a>
+                <a href="login.html" class="top-nav-element" id="login-button">
+                    <div>Log In</div>
+                </a>
+                <a href="logout.html" class="top-nav-element" id="logout-button">
+                    <div>Log Out</div>
+                </a>
+            </div>
+            <div class="header">
+                <b>CREATE NEW ACCOUNT</b>
+            </div>
+            <div class="login-form">
+                <form action='create.php' method='POST'>
+                    Username: <input type='text' name='login' value=''>
+                    <br />
+                    Password: <input type='password' name='passwd' value=''>
+                    <br />
+                    <input type='submit' name='submit' value='OK' id='submit-bttn'></input>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
