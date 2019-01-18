@@ -1,8 +1,5 @@
-
 <?php
-
 class Targaryen {
-
     public function resistsFire() {
         return False;
     }
@@ -14,6 +11,4 @@ class Targaryen {
             return 'burns alive';
     }
 }
-
 ?>
-
