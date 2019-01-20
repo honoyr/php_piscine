@@ -3,70 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
     <script defer>
+        
+        function operator(op){
+            return op;
+        }
+        
         function res() {
             var num1, num2, op, res;
+            var interval = "";
 
             num1 = document.getElementById("n1").value;
             num1 = parseInt(num1);
 
             num2 = document.getElementById("n2").value;
             num2 = parseInt(num2);
-            op = document.getElementById('operand').value;
+            op = document.getElementById("operator").value;
 
-            if (op === '+')
-            {
-                res = num1 + num2
-                console.log(res);
-                document.getElementById("out").innerHTML = res;
+            if (num1 >= 0 && num2 >= 0)
+            {   if (op === '+')
+                {
+                    res = num1 + num2
+                    console.log(res);
+                    document.getElementById("out").innerHTML = res;
+                }
+                if (op === '-')
+                {
+                    res = num1 - num2
+                    console.log(res);
+                    document.getElementById("out").innerHTML = res;
+                }
+                if (op === '*')
+                {
+                    res = num1 * num2
+                    console.log(res);
+                    document.getElementById("out").innerHTML = res;
+                }
+                if (op === '/')
+                {
+                    if (num1 === 0 || num2 === 0)
+                    {
+                        console.log('It’s over 9000!');
+                        document.getElementById("out").innerHTML = 'It’s over 9000!';
+                    }
+                    else
+                    {
+                        res = num1 / num2
+                        console.log(res);
+                        document.getElementById("out").innerHTML = res;
+                    }
+                    
+                }
+                if (op === '%')
+                {
+                    if (num1 === 0 || num2 === 0)
+                    {
+                        console.log('It’s over 9000!');
+                        document.getElementById("out").innerHTML = 'It’s over 9000!';
+                    }
+                    else{
+                        res = num1 % num2
+                        console.log(res);
+                        document.getElementById("out").innerHTML = res;
+                    }
+                    
+                }
             }
-//                alert(num1 + num2);
-            if (op === '-')
+            else
             {
-                res = num1 - num2
-                console.log(res);
-                document.getElementById("out").innerHTML = res;
+                console.log('Error :\(');
+                document.getElementById("out").innerHTML = 'Error :\(';    
             }
-//                document.getElementById("out").innerHTML = num1 - num2;
-//                alert(num1 - num2);
-            if (op === '*')
-            {
-                res = num1 * num2
-                console.log(res);
-                document.getElementById("out").innerHTML = res;
-            }
-//                document.getElementById("out").innerHTML = num1 * num2;
-//                alert(num1 * num2);
-            if (op === '/')
-            {
-                if (num1 === 0 || num2 === 0)
-
-                res = num1 / num2
-                console.log(res);
-                document.getElementById("out").innerHTML = res;
-            }
-//                document.getElementById("out").innerHTML = num1 / num2;
-//                alert(num1 / num2);
-            if (op === '%')
-            {
-                res = num1 % num2
-                console.log(res);
-                document.getElementById("out").innerHTML = res;
-            }
-//                document.getElementById("out").innerHTML = num1 % num2;
-//                alert(num1 % num2);
         }
+        
+        function startInterval()
+        {
+            interval = window.setInterval(showAlert, 5);
+            alert(interval);
+        }
+        
+        startInterval();
     </script>
 </head>
 <body>
     <p>Cal</p>
-    <p>Num1<input type="text" id="n1"></p>
-    <p>Operand<input type="text" placeholder='+, -, *, /, %' id="operand"></p>
-    <p>Num2<input type="text" id="n2"></p>
-    
-<!--    <button onclick="plus()">add</button>-->
-<!--    <button onclick="minus()">minus</button>-->
-    <button onclick="res()">Result</button>
+    <a>Put num 1 <input type="text" id="n1"></a>
+   <select id="operator">
+      <option  value="+">+</option>
+      <option  value="-">-</option>
+      <option  value="*">*</option>
+      <option  value="/">/</option>
+      <option  value="%">%</option>
+    </select>
+    <a>num 2 <input type="text" id="n2"></a>
+    <button onclick="res()">Try me</button>
     <hr>
     <p id="out"></p>
 </body>
