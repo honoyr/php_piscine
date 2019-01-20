@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            setInterval(function(){ alert("Please, use me..."); }, 30000);
+        })
+        function calc(form) {
+            var num1, num2, op, res;
+
+            num1 = form.elements["n1"].value;
+            num1 = parseInt(num1);
+
+            num2 = form.elements["n2"].value;
+            num2 = parseInt(num2);
+            op = form.elements["operator"].value;
+
+            if (num1 >= 0 && num2 >= 0)
+            {
+                if (op === '+')
+                {
+                    res = num1 + num2
+                    console.log(JSON.stringify(res));
+                    alert(res);
+                }
+                if (op === '-')
+                {
+                    res = num1 - num2
+                    console.log(JSON.stringify(res));
+                    alert(res);
+                }
+                if (op === '*')
+                {
+                    res = num1 * num2
+                    console.log(JSON.stringify(res));
+                    alert(res);
+                }
+                if (op === '/')
+                {
+                    if (num1 === 0 || num2 === 0)
+                    {
+                        console.log(JSON.stringify('It’s over 9000!'));
+                        alert('It’s over 9000!');
+                    }
+                    else
+                    {
+                        res = num1 / num2
+                        console.log(JSON.stringify(res));
+                        alert(res);
+                    }
+
+                }
+                if (op === '%')
+                {
+                    if (num1 === 0 || num2 === 0)
+                    {
+                        console.log(JSON.stringify('It’s over 9000!'));
+                        alert('It’s over 9000!');
+                    }
+                    else{
+                        res = num1 % num2
+                        console.log(JSON.stringify(res));
+                        alert(res);
+                    }
+
+                }
+            }
+            else
+            {
+                console.log(JSON.stringify('Error :\('));
+                alert('Error :\(');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Cal</h2>
+    <form onsubmit="calc(this)" action="">
+        <a>Put num 1 <input type="text" id="n1"></a>
+        <select id="operator">
+            <option  value="+">+</option>
+            <option  value="-">-</option>
+            <option  value="*">*</option>
+            <option  value="/">/</option>
+            <option  value="%">%</option>
+        </select>
+        <a>num 2 <input type="text" id="n2"></a>
+        <button id="submit" value="OK"> Try me</button>
+        <hr>
+        <p id="out"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="todo.js"></script>
+<style>
+	body {
+		background-color: rgba(114, 228, 164, 0.7);
+	}
+	.container {
+		width: 50%;
+		margin: 0 auto;
+		display: block;
+		margin-top: 200px;
+		background: #ffec85;
+		padding: 20px;
+		border: 0;
+		border-radius: 10px;
+		font-size: 14px;
+		-webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+}
+	button {
+		margin: 0 auto;
+		display: block;
+		font-family: "Roboto", sans-serif;
+		text-transform: uppercase;
+		outline: 0;
+		background: #FFFFFF;
+		width: 55%;
+		min-width: 20%;
+		border: 0;
+		border-radius: 10px;
+		padding: 15px;
+		color: #565454;
+		font-size: 14px;
+		-webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+	}
+	#ft_list {
+		margin: 0 auto;
+		display: block;
+		margin: 0 auto 50px;
+	}
+	#ft_list > div {
+		margin: 5px auto 5px auto;
+		text-align: center;
+		background: #FFFFFF;
+		width: 70%;
+		height: 10%;
+		border: 0;
+		border-radius: 10px;
+		padding: 15px;
+		color: #565454;
+		font-size: 14px;
+		-webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+	    <div id="ft_list"></div>
+		<button onclick="ask()" id="new" name="new">Add note</button>
+	</div>
+</body>
+</html>
